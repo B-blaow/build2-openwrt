@@ -55,7 +55,7 @@ make_download() {
     touch .config
 
     # 从 x86_64.config 文件中读取配置
-    read -r -d '' config <../x86_64.config
+    read -r -d '' config <../.config
     # 将配置写入 .config 文件
     echo "$config" >.config
 
